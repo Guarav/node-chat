@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link type="text/css" rel = "stylesheet" href = "node-chat.css"/>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" src="node-chat.js"></script>
+    </head>
+    <body>
+        <!--loading upper part-->
+        <div class="upper-left">
+            <div class="user-name">
+                <div class="heading">Users :</div>
+                <div id="users"></div>
+            </div>
+        </div>
+        <div class="upper-viewport">
+            <div class="chat-start-line" >You are connected!!</div>
+	    <div id = "conversation"></div>
+        </div>
+
+        <!--loading the lower part-->
+        <div class="lower-left">
+            <button class="stop-button">STOP</button>
+        </div>
+        <div class="lower-part">
+            <textarea id = "data" placeholder="Enter your message here" ></textarea>
+        </div>
+    </body>
+
+</html>
